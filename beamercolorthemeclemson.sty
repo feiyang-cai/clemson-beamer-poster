@@ -1,0 +1,111 @@
+% Clemson color theme for Gemini poster template
+
+% ====================
+% Fonts
+% Libre Franklin — free, SIL Open Font License
+%   https://fonts.google.com/specimen/Libre+Franklin
+% Source Serif 4 — free, SIL Open Font License, by Adobe
+%   https://fonts.google.com/specimen/Source+Serif+4
+% ====================
+
+\newfontfamily\LibreFranklin[
+  UprightFont={Libre Franklin},
+  ItalicFont={Libre Franklin Light Italic},
+  BoldFont={Libre Franklin Bold},
+  BoldItalicFont={Libre Franklin Bold Italic}
+]{Libre Franklin}
+
+\newfontfamily\SourceSerif[
+  UprightFont={Source Serif 4},
+  ItalicFont={Source Serif 4 Italic},
+  BoldFont={Source Serif 4 Bold},
+  BoldItalicFont={Source Serif 4 Bold Italic}
+]{Source Serif 4}
+
+\setsansfont[
+  UprightFont={Libre Franklin},
+  ItalicFont={Libre Franklin Light Italic},
+  BoldFont={Libre Franklin Bold},
+  BoldItalicFont={Libre Franklin Bold Italic}
+]{Libre Franklin}
+
+\setbeamerfont{headline}{family=\LibreFranklin}
+\setbeamerfont{headline title}{family=\LibreFranklin,size=\Huge,series=\bfseries}
+\setbeamerfont{headline author}{family=\LibreFranklin,size=\Large}
+\setbeamerfont{headline institute}{family=\LibreFranklin,size=\normalsize}
+\setbeamerfont{block title}{family=\LibreFranklin,size=\large,series=\bfseries}
+\setbeamerfont{heading}{family=\SourceSerif,series=\bfseries}
+\setbeamerfont{caption}{size=\small}
+\setbeamerfont{footline}{family=\LibreFranklin,size=\normalsize}
+
+% ====================
+% Color Palette
+% Source: https://www.clemson.edu/brand/color/
+% ====================
+
+% --- Primary Colors ---
+\definecolor{clemsonorange}{RGB}{245, 102, 0}   % #F56600 | PMS 152 U / 1595 C
+\definecolor{goalline}{RGB}{255, 255, 255}       % #FFFFFF | White
+\definecolor{regalia}{RGB}{82, 45, 128}          % #522D80 | PMS 268 C
+\definecolor{collegeavenue}{RGB}{51, 51, 51}     % #333333 | PMS Black C 90%
+\definecolor{diploma}{RGB}{46, 26, 71}           % #2E1A47 | PMS 2695 C
+
+% --- Secondary Colors ---
+\definecolor{parchment}{RGB}{239, 219, 178}      % #EFDBB2 | PMS 7506 C
+\definecolor{campusbrick}{RGB}{185, 71, 0}       % #B94700 | PMS 1525 C
+\definecolor{bowman}{RGB}{84, 98, 35}            % #546223 | PMS 371 C
+\definecolor{blueridge}{RGB}{0, 94, 184}         % #005EB8 | PMS 300 C
+\definecolor{stateflag}{RGB}{0, 32, 91}          % #00205B | PMS 281 C
+\definecolor{stadium}{RGB}{203, 196, 188}        % #CBC4BC | PMS Warm Gray 2 C
+\definecolor{howardsrock}{RGB}{140, 130, 121}    % #8C8279 | PMS Warm Gray 8 C
+\definecolor{reflection}{RGB}{200, 201, 199}     % #C8C9C7 | PMS Cool Gray 3 C
+\definecolor{innovation}{RGB}{136, 139, 141}     % #888B8D | PMS Cool Gray 8 C
+\definecolor{bengalstripe}{RGB}{0, 0, 0}         % #000000 | Black
+
+% --- Accent Colors ---
+\definecolor{classring}{RGB}{241, 196, 0}        % #F1C400 | PMS 7406 C
+\definecolor{clemsonbottoms}{RGB}{183, 191, 16}  % #B7BF10 | PMS 583 C
+\definecolor{azalea}{RGB}{173, 26, 172}          % #AD1AAC | PMS 253 C
+
+% ====================
+% Theme
+% ====================
+
+% Basic colors
+\setbeamercolor{palette primary}{fg=black,bg=white}
+\setbeamercolor{palette secondary}{fg=black,bg=white}
+\setbeamercolor{palette tertiary}{bg=black,fg=white}
+\setbeamercolor{palette quaternary}{fg=black,bg=white}
+\setbeamercolor{structure}{fg=regalia}
+
+% Headline — Regalia background with white text
+\setbeamercolor{headline}{fg=white,bg=regalia}
+% Headline rule — Clemson Orange accent bar below headline
+\setbeamercolor{headline rule}{bg=clemsonorange}
+
+% Block
+\setbeamercolor{block title}{fg=regalia,bg=white}
+\setbeamercolor{block separator}{bg=clemsonorange}
+\setbeamercolor{block body}{fg=black,bg=white}
+
+% Alert Block — uses Parchment for a warm highlight
+\setbeamercolor{block alerted title}{fg=regalia,bg=parchment}
+\setbeamercolor{block alerted separator}{bg=campusbrick}
+\setbeamercolor{block alerted body}{fg=black,bg=parchment}
+
+% Heading
+\setbeamercolor{heading}{fg=regalia}
+
+% Itemize bullets
+\setbeamercolor{item}{fg=clemsonorange}
+
+% Bibliography
+\setbeamercolor{bibliography item}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+\setbeamertemplate{bibliography entry article}{}
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
